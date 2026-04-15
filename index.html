@@ -41,42 +41,320 @@
 
 
     <main>
-        <section id="seccionCatalogo">Catalogo</section>
-        <section id="seccionCarrito" class="container-fluid py-5">
-            <div class="container-lg">
-                <div class="row">
+        <<<<<<< HEAD <section id="seccionCatalogo">
+            <Catalogo>
+                <h2 id="titulo-menu">
+                    Menú NightGlow
+                </h2>
 
-                    <div class="col-12">
-                        <div class="header-description my-4">
-                            <h2 class="title-header fw-bold display-4">
-                                SUS <br><span class="resalto">RESERVAS</span>
-                            </h2>
-                            <p class="description-header mb-0">
-                                Tu selección se guarda localmente para esta sesión. Revisa tus artículos antes de ir a
-                                la caja.
-                            </p>
-                        </div>
-                    </div>
+                <!-- BOTONES FILTRO -->
 
-                    <div class="container-list col-12 col-lg-8 my-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <span class="text-warning small fw-bold text-uppercase"
-                                style="letter-spacing: 2px;">Lista</span>
-                            <div class="flex-grow-1 ms-3 border-bottom border-secondary opacity-25"></div>
-                        </div>
+                <div id="botones-filtro">
 
-                        <div id="listCarrito" class="list-carrito">
-                            listaCarrito
-                        </div>
-                    </div>
+                    <button class="btn-filtro" data-category="all">
+                        Todos
+                    </button>
 
-                    <aside id="resumenCarrito" class="resumen-carrito col-12 col-lg-4 my-4">
-                        resumen_carrito
-                    </aside>
+                    <button class="btn-filtro" data-category="cocktails">
+                        Cocktails
+                    </button>
+
+                    <button class="btn-filtro" data-category="mocktail">
+                        Mocktail
+                    </button>
+
+                    <button class="btn-filtro" data-category="snack">
+                        Snacks
+                    </button>
 
                 </div>
-            </div>
-        </section>
+
+                <!-- CONTENEDOR PRODUCTOS -->
+
+                <div id="contenedor-productos">
+
+                    <!-- COCTELES CON ALCOHOL -->
+
+                    <div class="tarjeta-producto" data-id="1" data-category="cocktails">
+
+                        <img src="img/margarita.jpg">
+                        <h3>Margarita Glow</h3>
+                        <p>Tequila, limón y licor de naranja.</p>
+                        <span class="precio-producto">$20.000</span>
+
+                        <button class="btn-agregar" data-id="1">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="2" data-category="cocktails">
+
+                        <img class="tarjeta-producto-imagen" src="img/mojito.jpg">
+                        <h3> Mojito Night</h3>
+                        <p>Ron blanco, hierbabuena y soda.</p>
+                        <span class="precio-producto">$18.000</span>
+
+                        <button class="btn-agregar" data-id="2">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="3" data-category="cocktails">
+
+                        <img src="img/cosmopolitan.jpg">
+                        <h3>Cosmopolitan Neon</h3>
+                        <p>Vodka, cranberry y limón.</p>
+                        <span class="precio-producto">$22.000</span>
+
+                        <button class="btn-agregar" data-id="3">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="4" data-category="cocktails">
+
+                        <img src="img/pinacolada.jpg">
+                        <h3>Piña Colada Moon</h3>
+                        <p>Ron, piña y crema de coco.</p>
+                        <span class="precio-producto">$25.000</span>
+
+                        <button class="btn-agregar" data-id="4">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="5" data-category="cocktails">
+
+                        <img src="img/sunrise.jpg">
+                        <h3>Tequila Sunrise</h3>
+                        <p>Tequila, naranja y granadina.</p>
+                        <span class="precio-producto">$24.000</span>
+
+                        <button class="btn-agregar" data-id="5">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="6" data-category="cocktails">
+
+                        <img src="img/bluelagoon.jpg">
+                        <h3>Blue Lagoon</h3>
+                        <p>Vodka, curaçao azul y limón.</p>
+                        <span class="precio-producto">$23.000</span>
+
+                        <button class="btn-agregar" data-id="6">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <!-- MOCKTAILS -->
+
+                    <div class="tarjeta-producto" data-id="7" data-category="mocktail">
+
+                        <img src="img/sunset.jpg">
+                        <h3>Sunset Tropical</h3>
+                        <p>Mango, naranja y granadina.</p>
+                        <span class="precio-producto">$18.000</span>
+
+                        <button class="btn-agregar" data-id="7">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="8" data-category="mocktail">
+
+                        <img src="img/greenfresh.jpg">
+                        <h3>Green Fresh</h3>
+                        <p>Limón, pepino y soda.</p>
+                        <span class="precio-producto">$14.000</span>
+
+                        <button class="btn-agregar" data-id="8">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="9" data-category="mocktail">
+
+                        <img src="img/berry.jpg">
+                        <h3>Berry Glow</h3>
+                        <p>Fresa, mora y limón.</p>
+                        <span class="precio-producto">$15.000</span>
+
+                        <button class="btn-agregar" data-id="9">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="10" data-category="mocktail">
+
+                        <img src="img/citrus.jpg">
+                        <h3>Citrus Splash</h3>
+                        <p>Naranja, limón y soda.</p>
+                        <span class="precio-producto">$15.000</span>
+
+                        <button class="btn-agregar" data-id="10">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="11" data-category="mocktail">
+
+                        <img src="img/passion.jpg">
+                        <h3>Passion Fruit Dream</h3>
+                        <p>Maracuyá y hielo triturado.</p>
+                        <span class="precio-producto">$14.000</span>
+
+                        <button class="btn-agregar" data-id="11">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="12" data-category="mocktail">
+
+                        <img src="img/pinklemonade.jpg">
+                        <h3>Pink Lemonade</h3>
+                        <p>Limón rosado y soda.</p>
+                        <span class="precio-producto">$13.000</span>
+
+                        <button class="btn-agregar" data-id="12">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <!-- SNACKS -->
+
+                    <div class="tarjeta-producto" data-id="13" data-category="snack">
+
+                        <img src="img/nachos.jpg">
+                        <h3>Nachos NightGlow</h3>
+                        <p>Nachos con queso y guacamole.</p>
+                        <span class="precio-producto">$16.000</span>
+
+                        <button class="btn-agregar" data-id="13">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="14" data-category="snack">
+
+                        <img src="img/miniburgers.jpg">
+                        <h3>Mini Burgers</h3>
+                        <p>3 Pequeñas hamburguesas con queso.</p>
+                        <span class="precio-producto">$21.000</span>
+
+                        <button class="btn-agregar" data-id="14">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="15" data-category="snack">
+
+                        <img src="img/papas.jpg">
+                        <h3>Papas Bravas</h3>
+                        <p>350g de Papas fritas con salsa especial.</p>
+                        <span class="precio-producto">$18.000</span>
+
+                        <button class="btn-agregar" data-id="15">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="16" data-category="snack">
+
+                        <img src="img/alitas.jpg">
+                        <h3>Alitas BBQ</h3>
+                        <p>6 Alitas con salsa barbacoa.</p>
+                        <span class="precio-producto">$28.000</span>
+
+                        <button class="btn-agregar" data-id="16">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="17" data-category="snack">
+
+                        <img src="img/queso.jpg">
+                        <h3>6 Dedos de Queso</h3>
+                        <p>Mozzarella sticks crujientes.</p>
+                        <span class="precio-producto">$20.000</span>
+
+                        <button class="btn-agregar" data-id="17">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                    <div class="tarjeta-producto" data-id="18" data-category="snack">
+
+                        <img src="img/tacos.jpg">
+                        <h3>Tacos Mini</h3>
+                        <p>3 Tacos pequeños de pollo o carne.</p>
+                        <span class="precio-producto">$25.000</span>
+
+                        <button class="btn-agregar" data-id="18">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                </div>
+
+                </section>
+                <section id="seccionCarrito" class="container-fluid py-5">
+                    <div class="container-lg">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="header-description my-4">
+                                    <h2 class="title-header fw-bold display-4">
+                                        SUS <br><span class="resalto">RESERVAS</span>
+                                    </h2>
+                                    <p class="description-header mb-0">
+                                        Tu selección se guarda localmente para esta sesión. Revisa tus artículos antes
+                                        de ir a
+                                        la caja.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-list col-12 col-lg-8 my-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="text-warning small fw-bold text-uppercase"
+                                        style="letter-spacing: 2px;">Lista</span>
+                                    <div class="flex-grow-1 ms-3 border-bottom border-secondary opacity-25"></div>
+                                </div>
+
+                                <div id="listCarrito" class="list-carrito">
+                                    listaCarrito
+                                </div>
+                            </div>
+
+                            <aside id="resumenCarrito" class="resumen-carrito col-12 col-lg-4 my-4">
+                                resumen_carrito
+                            </aside>
+
+                        </div>
+                    </div>
+                </section>
+                =======
+
+                >>>>>>> origin/juanBranch
     </main>
 
     <footer class="pie-pagina">
