@@ -12,35 +12,39 @@
 
 <body class="container content-justify-center">
 
-    <nav class="navbar navbar-expand-lg barra-navegacion sticky-top">
-        <div class="container">
-            <a class="navbar-brand logo-principal" href="#">
-                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=200&q=80"
-                    alt="Logo de NightGlow" class="imagen-logo">
-                <span class="texto-logo">NightGlow</span>
-            </a>
+    <!-- Seccion Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg barra-navegacion sticky-top">
+            <div class="container">
+                <a class="navbar-brand logo-principal" href="#">
+                    <img src="img/NightGlow.png" alt="Logo de NightGlow" class="imagen-logo">
+                    <span class="texto-logo">NightGlow</span>
+                </a>
 
-            <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
-                aria-label="Abrir menú de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="menuPrincipal">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link enlace-navegacion" href="#seccionCatalogo">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link enlace-navegacion" href="#seccionCarrito">Carrito</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link enlace-navegacion" href="#seccionCatalogo">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlace-navegacion" href="#seccionCarrito">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
 
     <main>
+
+        <!-- Seccion Catalogo -->
         <section id="seccionCatalogo">
             <Catalogo>
                 <h2 id="titulo-menu">
@@ -315,48 +319,49 @@
 
                 </div>
 
-                </section>
-                <section id="seccionCarrito" class="container-fluid py-5">
-                    <div class="container-lg">
-                        <div class="row">
+        </section>
 
-                            <div class="col-12">
-                                <div class="header-description my-4">
-                                    <h2 class="title-header fw-bold display-4">
-                                        SUS <br><span class="resalto">RESERVAS</span>
-                                    </h2>
-                                    <p class="description-header mb-0">
-                                        Tu selección se guarda localmente para esta sesión. Revisa tus artículos antes
-                                        de ir a
-                                        la caja.
-                                    </p>
-                                </div>
-                            </div>
+        <!-- Seccion Carrito -->
+        <section id="seccionCarrito" class="container-fluid py-5">
+            <div class="container-lg">
+                <div class="row">
 
-                            <div class="container-list col-12 col-lg-8 my-4">
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="text-warning small fw-bold text-uppercase"
-                                        style="letter-spacing: 2px;">Lista</span>
-                                    <div class="flex-grow-1 ms-3 border-bottom border-secondary opacity-25"></div>
-                                </div>
-
-                                <div id="listCarrito" class="list-carrito">
-                                    listaCarrito
-                                </div>
-                            </div>
-
-                            <aside id="resumenCarrito" class="resumen-carrito col-12 col-lg-4 my-4">
-                                resumen_carrito
-                            </aside>
-
+                    <div class="col-12">
+                        <div class="header-description my-4">
+                            <h2 class="title-header fw-bold display-4">
+                                SUS <br><span class="resalto">Carrito</span>
+                            </h2>
+                            <p class="description-header mb-0">
+                                Tu selección se guarda localmente para esta sesión. Revisa tus artículos antes
+                                de ir a
+                                la caja.
+                            </p>
                         </div>
                     </div>
-                </section>
-                =======
 
-                >>>>>>> origin/juanBranch
+                    <div class="container-list col-12 col-lg-8 my-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="text-warning small fw-bold text-uppercase"
+                                style="letter-spacing: 2px;">Lista</span>
+                            <div class="flex-grow-1 ms-3 border-bottom border-secondary opacity-25"></div>
+                        </div>
+
+                        <div id="listCarrito" class="list-carrito">
+                            listaCarrito
+                        </div>
+                    </div>
+
+                    <aside id="resumenCarrito" class="resumen-carrito col-12 col-lg-4 my-4">
+                        resumen_carrito
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Seccion footer -->
     <footer class="pie-pagina">
         <div class="container contenido-pie">
             <div class="info-pie">
@@ -365,6 +370,7 @@
                     Cócteles, mocktails y snacks.
                 </p>
             </div>
+
             <div class="links-pie">
                 <a href="#seccionCatalogo" class="enlace-pie">Catálogo</a>
                 <a href="#seccionCarrito" class="enlace-pie">Carrito</a>
