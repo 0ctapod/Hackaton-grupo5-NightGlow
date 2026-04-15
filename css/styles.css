@@ -10,12 +10,20 @@
 .header-description {
     display: flex;
     flex-direction: column;
-}
-
-.header-description{
     margin: 0 60px 0 0;
 }
 
 .resalto {
-    color: #00f4fe
+    color: #00f4fe;
 }
+
+.title-header {
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.description-header {
+    color: #adaaaa;
+    max-width: 500px;
+}
+

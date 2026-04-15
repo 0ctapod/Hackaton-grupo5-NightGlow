@@ -17,32 +17,39 @@
 
     <main>
         <section id="seccionCatalogo">Catalogo</section>
-        <section id="seccionCarrito" class="container-fluid">
+        <section id="seccionCarrito" class="container-fluid py-5">
+            <div class="container-lg">
+                <div class="row">
 
-            <div class="row">
-
-                <div class="header-description my-4">
-                    <h2 class="title-header">
-                        SUS <br><span class="resalto">RESERVAS</span>
-                    </h2>
-                    <P class="description-header" style="color: #adaaaa;">
-                        Tu selección se guarda localmente para esta sesión. Revisa tus artículos antes de ir a la caja.
-                    </P>
-                </div>
-                <div class="col-12 col-md-7 container-list my-4">
-                    
-                    <hr>
-                    <div id="listCarrito" class="list-carrito">
-                        fd
+                    <div class="col-12">
+                        <div class="header-description my-4">
+                            <h2 class="title-header fw-bold display-4">
+                                SUS <br><span class="resalto">RESERVAS</span>
+                            </h2>
+                            <p class="description-header mb-0">
+                                Tu selección se guarda localmente para esta sesión. Revisa tus artículos antes de ir a
+                                la caja.
+                            </p>
+                        </div>
                     </div>
-    
-    
-                </div>
-                <div id="resumenCarrito" class="col-12 col-md-5 resumen-carrito">
-                    ljfljd
+
+                    <div class="container-list col-12 col-lg-8 my-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="text-warning small fw-bold text-uppercase" style="letter-spacing: 2px;">Lista</span>
+                            <div class="flex-grow-1 ms-3 border-bottom border-secondary opacity-25"></div>
+                        </div>
+
+                        <div id="listCarrito" class="list-carrito">
+                            listaCarrito
+                        </div>
+                    </div>
+
+                    <aside id="resumenCarrito" class="resumen-carrito col-12 col-lg-4 my-4">
+                        resumen_carrito
+                    </aside>
+
                 </div>
             </div>
-
         </section>
     </main>
 
