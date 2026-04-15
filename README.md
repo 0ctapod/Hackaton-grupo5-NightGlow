@@ -5,7 +5,7 @@ Este proyecto consiste en el diseño de una landing page de una tienda online de
 
 Integrantes:
 
-Octavio Franco
-Juan David Castro Rubiano
-Daniel Vega
-Luis Salgado
+Octavio Franco,
+Juan David Castro Rubiano,
+Daniel Vega,
+Luis Salgado.
